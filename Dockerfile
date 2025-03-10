@@ -16,8 +16,8 @@ USER $USER
 
 WORKDIR $HOME
 
-# Create SteamCMD, as well as server and demos directories (to avoid permission issues when mounting volumes / bind mounts)
-RUN mkdir -p Steam server demos
+# Create Steam, as well as server, demos and backups directories (to avoid permission issues when mounting volumes / bind mounts)
+RUN mkdir -p Steam server demos backups
 
 WORKDIR $HOME/Steam
 
